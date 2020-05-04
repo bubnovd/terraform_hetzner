@@ -20,6 +20,6 @@ resource "hcloud_server" "test" {
   ssh_keys    = ["${data.hcloud_ssh_key.ssh_key.id}"]
 }
 
-output "server_ip" {
-  value = "${hcloud_server.test.ipv4_address}"
-}
+#output "server_ip" {
+#  value = "${hcloud_server.test.ipv4_address}"
+#}

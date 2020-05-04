@@ -13,8 +13,8 @@ data "hcloud_ssh_key" "ssh_key" {
 }
 
 # Create a server
-resource "hcloud_server" "test" {
-  name        = "test-srv"
+resource "hcloud_server" "monitoring" {
+  name        = "mon-core"
   image       = "debian-10"
   server_type = "cx11"
   ssh_keys    = ["${data.hcloud_ssh_key.ssh_key.id}"]

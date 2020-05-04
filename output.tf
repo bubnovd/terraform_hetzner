@@ -1,7 +1,7 @@
 data "template_file" "ansible_inventory" {
   template = "${file("templates/ansible_inventory.tpl")}"
   vars = {
-    host_ip = "${hcloud_server.test.ipv4_address}"
+    host_ip = "${hcloud_server.monitoring.ipv4_address}"
   }
 }
 

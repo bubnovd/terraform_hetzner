@@ -16,7 +16,7 @@ data "hcloud_ssh_key" "ssh_key" {
 resource "hcloud_server" "monitoring" {
   name        = "mon-core"
   image       = "debian-10"
-  server_type = "cx11"
+  server_type = "cx21"
   ssh_keys    = ["${data.hcloud_ssh_key.ssh_key.id}"]
 }
 

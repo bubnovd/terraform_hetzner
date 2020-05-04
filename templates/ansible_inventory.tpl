@@ -1,9 +1,18 @@
 # vim: set ft=ansible_hosts:
 [prometheus]
-test ansible_host=${host_ip}
+monitoring ansible_host=${host_ip} ansible_user=ansible
 
 [grafana]
-test
+monitoring
 
 [alertmanager]
-test
+monitoring
+
+[node-exporter]
+monitoring
+
+[mikrotik-exporter]
+monitoring
+
+[blackbox-exporter]
+monitoring

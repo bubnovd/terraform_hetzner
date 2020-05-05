@@ -16,3 +16,6 @@ monitoring
 
 [blackbox-exporter]
 monitoring
+
+[vpn-client]
+monitoring

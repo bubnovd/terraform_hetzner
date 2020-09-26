@@ -94,6 +94,11 @@ resource "hcloud_network_route" "nmc254" {
   destination = "10.254.0.0/24"
   gateway = "10.0.0.5"
 }
+resource "hcloud_network_route" "nmc253" {
+  network_id = hcloud_network.network.id
+  destination = "10.253.0.0/24"
+  gateway = "10.0.0.9"
+}
 
 output "server_ip" {
   value = "${hcloud_server.usergate.ipv4_address}"
